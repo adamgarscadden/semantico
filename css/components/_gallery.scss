@@ -1,7 +1,11 @@
 .gallery {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 1rem;
+
+  @media only screen and (min-width: 900px) {
+    padding: 0 3rem;
+  }
 }
 
 .gallery__item {
@@ -12,20 +16,20 @@
 
 .gallery__title {
   position: absolute;
-  background: var(--white);
   padding: 9px;
-  border-radius: 6px;
-  left: 30px;
-  top: 30px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 1.6rem;
-  position: absolute;
   background: var(--white);
-  padding: 9px;
   border-radius: 6px;
-  left: 20px;
-  top: 20px;
+  left: 11px;
+  top: 13px;
+  font-size: 1.4rem;
+
+  @media only screen and (min-width: 900px) {
+    left: 20px;
+    top: 20px;
+    font-size: 1.6rem;
+  }
 }
 
 .gallery__image {

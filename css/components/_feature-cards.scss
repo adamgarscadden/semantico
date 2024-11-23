@@ -1,11 +1,12 @@
 .feature-cards {
   max-width: var(--content-width);
-  padding: 0 3rem;
+  padding: 0 1rem;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
   @media only screen and (min-width: 900px) {
+    padding: 0 3rem;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -78,9 +79,13 @@
 
 .feature-cards__intro-heading {
   color: var(--white);
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.3;
+
+  @media only screen and (min-width: 900px) {
+    font-size: 2.1rem;
+  }
 }
 
 .feature-cards__header-btn {
@@ -88,12 +93,14 @@
   background-color: #3f3f3f;
   border-radius: 0.75rem;
   margin-left: 1.5rem;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   @media only screen and (min-width: 900px) {
     display: none;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 }
 
@@ -130,10 +137,14 @@
 }
 
 .feature-cards__text {
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   line-height: 1.3;
   font-weight: 300;
   color: var(--white);
+
+  @media only screen and (min-width: 900px) {
+    font-size: 2.5rem;
+  }
 }
 
 .feature-cards__action {
@@ -156,5 +167,9 @@
   color: black;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+
+  @media only screen and (min-width: 900px) {
+    font-size: 1.8rem;
+  }
 }
