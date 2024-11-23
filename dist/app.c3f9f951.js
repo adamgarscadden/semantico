@@ -117,15 +117,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"app.js":[function(require,module,exports) {
-(function () {
-  // select all drawer buttons and drawers
+})({"js/components/drawer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setupDrawers = setupDrawers;
+function setupDrawers() {
   var drawerButtons = document.querySelectorAll(".js-open-drawer");
   drawerButtons.forEach(function (drawerButton) {
     var drawerId = drawerButton.getAttribute("aria-controls");
     var drawer = document.querySelector("#".concat(drawerId));
-
-    // open / close the drawer
     drawerButton.addEventListener("click", function () {
       var isExpanded = drawerButton.getAttribute("aria-expanded") === "true";
       drawerButton.setAttribute("aria-expanded", !isExpanded);
@@ -133,18 +136,24 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       drawer.classList.toggle("feature-cards__content--open", !isExpanded);
     });
   });
-  document.querySelectorAll(".site-header__nav-link").forEach(function (navLink) {
+}
+},{}],"js/components/smooth-scroll.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setupSmoothScroll = setupSmoothScroll;
+function setupSmoothScroll() {
+  var navLinks = document.querySelectorAll(".site-header__nav-link");
+  navLinks.forEach(function (navLink) {
     navLink.addEventListener("click", function (e) {
       e.preventDefault();
-
-      // Get the target section ID from the href attribute
       var targetId = this.getAttribute("href");
       var target = document.querySelector(targetId);
       if (target) {
         var headerHeight = 110;
         var targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-        // Scroll to the target position
         window.scrollTo({
           top: targetPosition,
           behavior: "smooth"
@@ -152,32 +161,31 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       }
     });
   });
+}
+},{}],"js/components/active-nav.js":[function(require,module,exports) {
+"use strict";
 
-  // Select all navigation links and sections
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setupActiveNav = setupActiveNav;
+function setupActiveNav() {
   var navLinks = document.querySelectorAll(".site-header__nav-link");
   var sections = document.querySelectorAll("section");
-
-  // Helper function to remove the active class from all links
   function clearActiveLinks() {
     navLinks.forEach(function (link) {
       return link.classList.remove("site-header__nav-link--active");
     });
   }
-
-  // Scroll event listener
   window.addEventListener("scroll", function () {
     var currentSectionId = null;
-
-    // Check each section's position relative to the viewport
     sections.forEach(function (section) {
-      var sectionTop = section.offsetTop - 110; // Adjust for header height
+      var sectionTop = section.offsetTop - 110;
       var sectionBottom = sectionTop + section.offsetHeight;
       if (window.scrollY + 1 >= sectionTop && window.scrollY < sectionBottom) {
         currentSectionId = section.id;
       }
     });
-
-    // Update active class on navigation links
     if (currentSectionId) {
       clearActiveLinks();
       var activeLink = document.querySelector("a[href=\"#".concat(currentSectionId, "\"]"));
@@ -185,12 +193,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
         activeLink.classList.add("site-header__nav-link--active");
       }
     } else {
-      // If no section is visible, clear active classes
       clearActiveLinks();
     }
   });
-})();
-},{}],"../../.nvm/versions/node/v16.19.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+}
+},{}],"js/app.js":[function(require,module,exports) {
+"use strict";
+
+var _drawer = require("./components/drawer.js");
+var _smoothScroll = require("./components/smooth-scroll.js");
+var _activeNav = require("./components/active-nav.js");
+(0, _drawer.setupDrawers)();
+(0, _smoothScroll.setupSmoothScroll)();
+(0, _activeNav.setupActiveNav)();
+},{"./components/drawer.js":"js/components/drawer.js","./components/smooth-scroll.js":"js/components/smooth-scroll.js","./components/active-nav.js":"js/components/active-nav.js"}],"../../.nvm/versions/node/v16.19.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -359,5 +375,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../.nvm/versions/node/v16.19.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
-//# sourceMappingURL=/app.c328ef1a.js.map
+},{}]},{},["../../.nvm/versions/node/v16.19.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
+//# sourceMappingURL=/app.c3f9f951.js.map

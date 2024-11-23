@@ -1,0 +1,36 @@
+.site-intro {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 3rem;
+  padding: 3rem 3rem 9rem;
+  min-height: calc(100vh - 36rem);
+}
+
+.site-intro__text-highlight {
+  background: #2d2d2d;
+  padding: 6px 17px 6px 6px;
+  border-radius: 18px;
+  position: relative;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.site-intro__text {
+  max-width: var(--content-width);
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.1;
+  font-size: 4rem;
+  color: var(--white);
+  max-width: 1280px;
+
+  @media only screen and (min-width: 800px) {
+    font-size: 80px;
+    font-size: 5rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 100px;
+  }
+}
