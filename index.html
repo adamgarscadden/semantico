@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Semantico - an example of semantic markup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.scss" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-header__site-name">Semantico</h1>
+      <nav class="site-header__nav" aria-label="Main navigation">
+        <a href="#about" class="site-header__nav-link" aria-label="About Us"
+          >About Us</a
+        >
+        <a
+          href="#services"
+          class="site-header__nav-link"
+          aria-label="Our Services"
+          >Services</a
+        >
+        <a
+          href="#contact"
+          class="site-header__nav-link"
+          aria-label="Contact Information"
+          >Contact</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="site-intro" aria-label="Introduction">
+        <h2 class="site-intro__text">
+          This is a semantic layout to showcase best practices with
+          <span class="site-intro__text-highlight">CSS</span>,
+          <span class="site-intro__text-highlight">HTML</span>,
+          <span class="site-intro__text-highlight">Accessibility</span>, and
+          vanilla <span class="site-intro__text-highlight">JS</span>.
+        </h2>
+      </section>
+      <section class="card" aria-label="Feature cards">
+        <article
+          class="card__single"
+          aria-labelledby="accessibility-card-title"
+        >
+          <header class="card__intro card__intro--green">
+            <h3 class="card__intro-heading" id="accessibility-card-title">
+              Accessibility<br />Standards
+            </h3>
+            <div class="card__action">
+              <button
+                class="card__header-btn js-open-drawer"
+                id="js-open-drawer-1"
+                aria-label="Expand"
+                aria-expanded="false"
+                aria-controls="js-drawer-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Expand details"
+                >
+                  <path d="M32 20L24 28L16 20" fill="#3F3F3F"></path>
+                  <path
+                    d="M32 20L24 28L16 20"
+                    stroke="#F7F7F3"
+                    stroke-width="1.5"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <div class="card__content js-drawer" id="js-drawer-1" hidden>
+            <p class="card__content__text">
+              When websites and web tools are properly designed and coded,
+              people with disabilities can use them.
+            </p>
+            <ul class="card__tags">
+              <li class="card__tag">Auditory</li>
+              <li class="card__tag">Cognitive</li>
+              <li class="card__tag">Neurological</li>
+              <li class="card__tag">Physical</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card__single" aria-labelledby="css-card-title">
+          <header class="card__intro card__intro--yellow">
+            <h3 class="card__intro-heading" id="css-card-title">
+              CSS<br />Thinking
+            </h3>
+            <div class="card__action">
+              <button
+                class="card__header-btn js-open-drawer"
+                id="js-open-drawer-2"
+                aria-label="Expand"
+                aria-expanded="false"
+                aria-controls="js-drawer-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Expand details"
+                >
+                  <path d="M32 20L24 28L16 20" fill="#3F3F3F"></path>
+                  <path
+                    d="M32 20L24 28L16 20"
+                    stroke="#F7F7F3"
+                    stroke-width="1.5"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <div class="card__content js-drawer" id="js-drawer-2" hidden>
+            <p class="card__content__text">
+              When websites and web tools are properly designed and coded,
+              people with disabilities can use them.
+            </p>
+            <ul class="card__tags">
+              <li class="card__tag">Greatness</li>
+              <li class="card__tag">Awesomeness</li>
+              <li class="card__tag">Coolness</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card__single" aria-labelledby="react-card-title">
+          <header class="card__intro card__intro--blue">
+            <h3 class="card__intro-heading" id="react-card-title">
+              No<br />React?
+            </h3>
+          </header>
+          <div class="card__content">
+            <p class="card__content__text">
+              When websites and web tools are properly designed and coded,
+              people with disabilities can use them. However, currently many
+              sites and tools are developed with accessibility barriers that
+              make them difficult or impossible for some people to use.
+            </p>
+            <ul class="card__tags" aria-label="Accessibility categories">
+              <li
+                class="card__tag"
+                aria-label="Accessibility category: Auditory"
+              >
+                Auditory
+              </li>
+              <li
+                class="card__tag"
+                aria-label="Accessibility category: Cognitive"
+              >
+                Cognitive
+              </li>
+              <li
+                class="card__tag"
+                aria-label="Accessibility category: Neurological"
+              >
+                Neurological
+              </li>
+              <li
+                class="card__tag"
+                aria-label="Accessibility category: Physical"
+              >
+                Physical
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="gallery">
+        <header class="gallery__header">
+          <h2 class="gallery__heading">Our work</h2>
+          <p class="gallery__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            excepturi, nobis fugiat assumenda nesciunt, quasi dolor
+            exercitationem molestiae nemo hic amet atque officiis quae eos ea
+            expedita harum modi quis?
+          </p>
+        </header>
+        <article class="gallery__item">
+          <div class="gallery__title">Celebrating the night</div>
+          <img src="img/image-1.jpg" class="gallery__image" alt="" />
+        </article>
+        <article class="gallery__item">
+          <img src="img/image-2.jpg" class="gallery__image" alt="" />
+        </article>
+        <article class="gallery__item">
+          <img src="img/image-3.jpg" class="gallery__image" alt="" />
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
