@@ -13,7 +13,7 @@
 
 .site-intro__text-highlight {
   @media only screen and (min-width: 800px) {
-    background: #2d2d2d;
+    background: #1a1a1a;
     padding: 6px 17px 6px 6px;
     border-radius: 18px;
     position: relative;
@@ -23,14 +23,13 @@
 }
 
 .site-intro__text {
-  max-width: var(--content-width);
-  font-family: "Cardo", serif;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.1;
-  font-size: 3.5rem;
-  color: var(--white);
   max-width: 1280px;
+  font-family: var(--font-2);
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  font-style: normal;
+  color: var(--white);
 
   @media only screen and (min-width: 800px) {
     font-size: 80px;

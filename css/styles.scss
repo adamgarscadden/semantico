@@ -9,11 +9,13 @@
   --yellow: #fad16d;
   --blue: #63a2f8;
   --purple: #c09df8;
+  --font-1: "Inter", serif;
+  --font-2: "Cardo", serif;
 }
 
 body {
   background-color: var(--black);
-  font-family: "Inter", serif;
+  font-family: var(--font-1);
   font-weight: 400;
   font-style: normal;
 }

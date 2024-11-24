@@ -4,7 +4,7 @@
   margin: 0px auto;
   display: flex;
   flex-direction: column;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-1);
   @media only screen and (min-width: 900px) {
     padding: 0 3rem;
     flex-direction: row;
