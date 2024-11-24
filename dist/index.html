@@ -8,8 +8,8 @@
     <meta name="description" content="Learn how to use semantic markup correctly, accessibility, and user experience.">
 
     <!-- Canonical URL -->
-    <!-- <link rel="canonical" href="https://example.com/semantic-markup" /> -->
-    
+    <link rel="canonical" href="https://semanticoo.netlify.app/">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
           vanilla <span class="site-intro__text-highlight">Javascript</span>.
         </h2>
       </section>
-      <section class="feature-cards" aria-label="Feature cards" id="feature-cards" "="">
+      <section class="feature-cards" aria-label="Feature cards" id="feature-cards">
         <article class="feature-cards__single" aria-labelledby="accessibility-card-title" aria-describedby="js-drawer-1">
           <header class="feature-cards__intro feature-cards__intro--green">
             <h3 class="feature-cards__intro-heading" id="accessibility-card-title">
@@ -52,8 +52,15 @@
           </header>
           <div class="feature-cards__content js-drawer" id="js-drawer-1" hidden="">
             <p class="feature-cards__text">
-              When websites and web tools are properly designed and coded,
-              people with disabilities can use them.
+              Website accessibility best practices ensure that digital content
+              is usable by everyone, including individuals with disabilities.
+              Key practices include using semantic HTML elements, such as
+              headings and landmarks, to create a logical content structure that
+              is easy to navigate with assistive technologies.<br><br>
+              Providing alternative text for images ensures that visual content
+              is accessible to screen reader users, while ensuring sufficient
+              color contrast and avoiding color as the sole means of conveying
+              information supports those with visual impairments.
             </p>
             <ul class="feature-cards__tags">
               <li class="feature-cards__tag">Auditory</li>
@@ -79,20 +86,29 @@
           </header>
           <div class="feature-cards__content js-drawer" id="js-drawer-2" hidden="">
             <p class="feature-cards__text">
-              When websites and web tools are properly designed and coded,
-              people with disabilities can use them.
+              CSS best practices help ensure maintainable, scalable, and
+              performant styles for web development. Writing clear, consistent,
+              and modular CSS starts with using meaningful class names that
+              follow a naming convention like BEM (Block-Element-Modifier) to
+              improve readability and avoid conflicts. <br><br>Keeping CSS
+              organized by grouping related styles, using comments for
+              documentation, and maintaining a consistent structure reduces
+              complexity. Leverage reusable variables for colors, typography,
+              and spacing to enable theme consistency and simplify future
+              changes.
             </p>
             <ul class="feature-cards__tags">
-              <li class="feature-cards__tag">Greatness</li>
-              <li class="feature-cards__tag">Awesomeness</li>
-              <li class="feature-cards__tag">Coolness</li>
+              <li class="feature-cards__tag">Specificity</li>
+              <li class="feature-cards__tag">BEM</li>
+              <li class="feature-cards__tag">Modular</li>
+              <li class="feature-cards__tag">Performant</li>
             </ul>
           </div>
         </article>
         <article class="feature-cards__single" aria-labelledby="react-card-title" aria-describedby="js-drawer-3">
           <header class="feature-cards__intro feature-cards__intro--blue">
             <h3 class="feature-cards__intro-heading" id="react-card-title">
-              No<br>React?
+              Vanilla<br>Javascript
             </h3>
             <button class="feature-cards__header-btn js-open-drawer" id="js-open-drawer-3" aria-label="Expand" aria-expanded="false" aria-controls="js-drawer-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" role="img" aria-label="Expand details">
@@ -103,16 +119,21 @@
           </header>
           <div class="feature-cards__content js-drawer" id="js-drawer-3" hidden="">
             <p class="feature-cards__text">
-              When websites and web tools are properly designed and coded,
-              people with disabilities can use them. However, currently many
-              sites and tools are developed with accessibility barriers that
-              make them difficult or impossible for some people to use.
+              Vanilla JavaScript best practices focus on writing clean,
+              efficient, and maintainable code without relying on frameworks.
+              Start by structuring your code using modular patterns or ES6
+              modules to separate concerns and improve reusability. Follow
+              consistent naming conventions for variables and functions, and
+              write descriptive comments to enhance readability. <br><br>Add
+              event listeners sparingly and clean them up when no longer needed
+              to prevent memory leaks. For accessibility, ensure custom
+              interactions work seamlessly with the keyboard and assistive
+              technologies, and use semantic HTML whenever possible.
             </p>
             <ul class="feature-cards__tags">
-              <li class="feature-cards__tag">Auditory</li>
-              <li class="feature-cards__tag">Cognitive</li>
-              <li class="feature-cards__tag">Neurological</li>
-              <li class="feature-cards__tag">Physical</li>
+              <li class="feature-cards__tag">Modular Design</li>
+              <li class="feature-cards__tag">Clean Code</li>
+              <li class="feature-cards__tag">Accessibility</li>
             </ul>
           </div>
         </article>

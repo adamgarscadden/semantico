@@ -451,7 +451,8 @@ html {
 }
 
 .site-header__nav-link--active {
-  background: #c09df8;
+  background: #333333;
+  color: var(--white);
 }
 
 .site-intro {
@@ -464,7 +465,7 @@ html {
   .site-intro {
     padding: 0 3rem;
     padding: 3rem 3rem 9rem;
-    min-height: calc(100vh - 36rem);
+    min-height: calc(100vh - 40rem);
   }
 }
 
@@ -632,7 +633,7 @@ html {
   .feature-cards__content {
     margin-bottom: 1.6rem;
     display: flex;
-    min-height: 62rem;
+    min-height: 70rem;
   }
 }
 
