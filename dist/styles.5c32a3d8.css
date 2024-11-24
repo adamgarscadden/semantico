@@ -718,6 +718,7 @@ html {
   left: 1.1rem;
   top: 1.3rem;
   font-size: 1.4rem;
+  box-shadow: 4px 3px 7px 3px rgba(0, 0, 0, 0.0901960784);
 }
 @media only screen and (min-width: 900px) {
   .gallery__title {
