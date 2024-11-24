@@ -2,6 +2,9 @@
 
 A simple site built to demonstrate semantic HTML, accessibility, custom CSS component architecture, design understanding, QA practices, and vanilla JavaScript.
 
+## Live Demo
+View the site here: [Semantico](https://semanticoo.netlify.app/)
+
 ## Features
 - **Semantic HTML**: Proper use of semantic elements to enhance structure and accessibility.
 - **Accessibility Compliance**: Ensures no markup or accessibility errors.
@@ -31,5 +34,4 @@ Here's some screenshots of to show
 ### Lighthouse Results - All Green
 ![Lighthouse Results](https://raw.githubusercontent.com/adamgarscadden/semantico/main/screenshots/lighthouse.png)
 
-## Live Demo
-View the site here: [Semantico](https://semanticoo.netlify.app/)
+
