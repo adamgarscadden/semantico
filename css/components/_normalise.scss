@@ -367,3 +367,14 @@ html {
   /* 1rem = 10px */
   font-size: 10px;
 }
+
+body {
+  background-color: var(--black);
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
