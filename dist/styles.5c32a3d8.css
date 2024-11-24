@@ -462,6 +462,7 @@ html {
   margin: 0 auto;
   padding: 3rem 1rem 1rem;
   margin-bottom: 4rem;
+  min-height: calc(40vh - 3rem);
 }
 @media only screen and (min-width: 800px) {
   .site-intro {
@@ -474,32 +475,41 @@ html {
 @media only screen and (min-width: 800px) {
   .site-intro__text-highlight {
     background: #1a1a1a;
-    padding: 6px 17px 6px 6px;
-    border-radius: 18px;
+    padding: 0.6rem 1.7rem 0.6rem 0.6rem;
+    border-radius: 1.8rem;
     position: relative;
     display: inline-block;
-    margin: 5px 0;
+    margin: 0.5rem 0;
   }
 }
 
 .site-intro__text {
-  max-width: 1280px;
   font-family: var(--font-2);
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.1;
   font-style: normal;
   color: var(--white);
+  margin-top: 6rem;
 }
 @media only screen and (min-width: 800px) {
   .site-intro__text {
-    font-size: 80px;
+    font-size: 8rem;
     font-size: 5rem;
+    max-width: 85rem;
+    margin-top: 2rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .site-intro__text {
-    font-size: 100px;
+    font-size: 7rem;
+    max-width: 99rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .site-intro__text {
+    font-size: 10rem;
+    max-width: 128rem;
   }
 }
 
@@ -703,23 +713,23 @@ html {
   font-weight: 500;
   position: absolute;
   background: var(--white);
-  padding: 9px;
-  border-radius: 6px;
-  left: 11px;
-  top: 13px;
+  padding: 0.9rem;
+  border-radius: 0.6rem;
+  left: 1.1rem;
+  top: 1.3rem;
   font-size: 1.4rem;
 }
 @media only screen and (min-width: 900px) {
   .gallery__title {
-    left: 20px;
-    top: 20px;
+    left: 2rem;
+    top: 2rem;
     font-size: 1.6rem;
   }
 }
 
 .gallery__image {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.11);
 }
 

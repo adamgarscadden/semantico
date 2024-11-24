@@ -11,7 +11,6 @@
 .gallery__item {
   margin-bottom: 2rem;
   position: relative;
-  // box-shadow: 4px 4px 13px 1px #ffffff1f;
 }
 
 .gallery__title {
@@ -19,22 +18,22 @@
   font-weight: 500;
   position: absolute;
   background: var(--white);
-  padding: 9px;
-  border-radius: 6px;
-  left: 11px;
-  top: 13px;
+  padding: 0.9rem;
+  border-radius: 0.6rem;
+  left: 1.1rem;
+  top: 1.3rem;
   font-size: 1.4rem;
 
   @media only screen and (min-width: 900px) {
-    left: 20px;
-    top: 20px;
+    left: 2rem;
+    top: 2rem;
     font-size: 1.6rem;
   }
 }
 
 .gallery__image {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.11);
 }
 
