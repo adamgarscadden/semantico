@@ -5,6 +5,13 @@ A simple site built to demonstrate semantic HTML, accessibility, custom CSS comp
 ## Live Demo
 View the site here: [Semantico](https://semanticoo.netlify.app/)
 
+## To Run Locally
+# Install Parcel as a development dependency
+npm install --save-dev parcel
+
+# Use Parcel to serve or build your project
+npx parcel src/index.html
+
 ## Features
 - **Semantic HTML**: Proper use of semantic elements to enhance structure and accessibility.
 - **Accessibility Compliance**: Ensures no markup or accessibility errors.
