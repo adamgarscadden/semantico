@@ -6,8 +6,8 @@ A simple site built to demonstrate semantic HTML, accessibility, custom CSS comp
 View the site here: [Semantico](https://semanticoo.netlify.app/)
 
 ## To Run Locally
-npm install --save-dev parcel
-npx parcel index.html
+- npm install --save-dev parcel 
+- npx parcel index.html
 
 ## Features
 - **Semantic HTML**: Proper use of semantic elements to enhance structure and accessibility.
