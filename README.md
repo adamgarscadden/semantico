@@ -17,6 +17,7 @@ npx parcel index.html
 - **Custom CSS Architecture**: A modular and maintainable approach to styling.
 - **Vanilla JavaScript**: Lightweight, clean JavaScript implementation.
 - **Design and QA**: Reflects an understanding of design principles and quality assurance.
+- **Lazy Loading and responsive images**: Modern approach to handling images.
 
 ## Overview
 
