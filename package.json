@@ -1,8 +1,24 @@
 {
   "devDependencies": {
-    "sass": "^1.81.0"
+    "@parcel/optimizer-cssnano": "^2.13.1",
+    "@parcel/optimizer-terser": "^2.13.1",
+    "@parcel/packager-raw-url": "^2.13.1",
+    "@parcel/transformer-sass": "^2.13.1",
+    "@parcel/transformer-webmanifest": "^2.13.1",
+    "autoprefixer": "^10.4.14",
+    "parcel": "^2.10.0",
+    "postcss": "^8.4.24",
+    "sass": "^1.81.0",
+    "svgo": "^3.3.2"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not IE 11"
+  ],
   "scripts": {
-    "build": "NODE_ENV=production parcel build src/index.html"
+    "build": "NODE_ENV=production parcel build index.html --dist-dir build --public-url ./",
+    "start": "parcel index.html"
   }
 }

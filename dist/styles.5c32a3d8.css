@@ -361,6 +361,7 @@ html {
   position: sticky;
   position: -webkit-sticky;
   backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
   top: 0;
   height: 6rem;
   z-index: 1;
